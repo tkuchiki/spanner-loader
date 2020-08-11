@@ -22,3 +22,10 @@ Usage of ./spanner-loader:
   -query string
         SQL
 ```
+
+## Example
+
+```
+# It is strongly recommended to execute an SQL statement that returns a single row of results, such as `COUNT(*)`
+$ spanner-loader -c 10 -d 5m0s -project myproject -instance test-instance -database test-database -query "SELECT COUNT(*) FROM Singers, Albums, Songs"
+```

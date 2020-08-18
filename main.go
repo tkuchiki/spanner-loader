@@ -15,9 +15,9 @@ import (
 )
 
 type Config struct {
-	GCPProjectID    string `envconfig:"GCP_PROJECT_ID" required:"true"`
-	SpannerInstance string `envconfig:"SPANNER_INSTANCE" required:"true"`
-	SpannerDatabase string `envconfig:"SPANNER_DATABASE" required:"true"`
+	GCPProjectID    string `envconfig:"GCP_PROJECT_ID"`
+	SpannerInstance string `envconfig:"SPANNER_INSTANCE"`
+	SpannerDatabase string `envconfig:"SPANNER_DATABASE"`
 }
 
 func dbpath(projectID, instanceName, databaseName string) string {

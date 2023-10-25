@@ -17,10 +17,14 @@ Usage of ./spanner-loader:
         Cloud Spanner Database
   -instance string
         Cloud Spanner Instance
+  -priority string
+        CPU priority: low, medium, high (default "high")
   -project string
         GCP Project
   -query string
         SQL
+  -version
+        Show version
 ```
 
 ## Example
